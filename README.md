@@ -9,6 +9,22 @@ The system was designed as part of a **Capstone experiment at Grambling State Un
 
 ---
 
+## 🖼️ System Visualization
+
+1. **GPS Module Overview**  
+   ![Adafruit GPS Module](https://tse4.mm.bing.net/th/id/OIP.2_MEmGJ8oTZ0p4630Y4KkQHaFs?r=0&pid=Api)  
+
+2. **Micro SD Card Breakout Board**  
+   ![Micro SD Breakout Board](https://tse3.mm.bing.net/th/id/OIP.Ppa8DsjzIZxnk2ZhYBy4dwHaFj?r=0&pid=Api)  
+
+3. **GPS Logger Shield Example**  
+   ![GPS Logger Shield](https://tse3.mm.bing.net/th/id/OIP.2AGCjGYJvR3_k_qjZahnuAHaFj?r=0&pid=Api)  
+
+4. **Wiring Example for GPS Breakout**  
+   ![GPS Wiring](https://tse4.mm.bing.net/th/id/OIP.X2ElFiJGaY8ctkKt9fPbxQHaFj?r=0&pid=Api)  
+
+---
+
 ## ✨ Features
 - **GPS Data Acquisition**
   - Latitude, longitude, altitude
