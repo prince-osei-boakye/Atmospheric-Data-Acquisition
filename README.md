@@ -1,6 +1,6 @@
 # Atmospheric Data Acquisition System
 
-## 📖 Overview
+##  Overview
 This project implements a **microcontroller-based GPS logging system** for high-altitude balloon experiments.  
 The system records **time, location, altitude, satellite information, and environmental data (temperature & pressure)**  
 at a sampling rate of **1 Hz**. Data is logged to an **SD card** in structured CSV format for reliable post-flight analysis.
@@ -9,7 +9,7 @@ The system was designed as part of a **Capstone experiment at Grambling State Un
 
 ---
 
-## 🖼️ System Visualization
+##  System Visualization
 
 1. **GPS Module Overview**  
    ![Adafruit GPS Module](https://tse4.mm.bing.net/th/id/OIP.2_MEmGJ8oTZ0p4630Y4KkQHaFs?r=0&pid=Api)  
@@ -25,7 +25,7 @@ The system was designed as part of a **Capstone experiment at Grambling State Un
 
 ---
 
-## ✨ Features
+##  Features
 - **GPS Data Acquisition**
   - Latitude, longitude, altitude
   - Time, date, satellite count, fix quality
@@ -43,7 +43,7 @@ The system was designed as part of a **Capstone experiment at Grambling State Un
 
 ---
 
-## ⚙️ System Architecture
+##  System Architecture
 
 ### Hardware
 - **Arduino Mega 2560** (or compatible board with multiple UARTs)
@@ -62,7 +62,7 @@ The system was designed as part of a **Capstone experiment at Grambling State Un
 
 ---
 
-## 🔄 Program Flow
+##  Program Flow
 
 ### Initialization (`setup()`)
 1. Start serial communication (`Serial` for debugging, `Serial1` for GPS).
@@ -87,7 +87,7 @@ The system was designed as part of a **Capstone experiment at Grambling State Un
 
 ---
 
-## 📊 Example Output
+##  Example Output
 
 **File: `GDAT0.csv`**
 ```csv
@@ -99,7 +99,7 @@ Time, Date, Fix, FixQuality, #sat, Longitude, Latitude, Altitude, Temperature, P
 
 ---
 
-## 🛠️ Functions
+##  Functions
 - **`loop()`**: Main program cycle. Reads GPS/sensor data, writes CSV.
 - **`GPS_config()`**: Configures GPS update rate and disables unused NMEA sentences.
 - **`useInterrupt(boolean v)`**: Enables or disables GPS interrupt routine.
@@ -110,14 +110,14 @@ Time, Date, Fix, FixQuality, #sat, Longitude, Latitude, Altitude, Temperature, P
 
 ---
 
-## ⚠️ Known Limitations
+##  Known Limitations
 - **Delay in loop**: `delay(1000)` enforces 1 Hz timing but blocks execution. A `millis()`-based scheduler is more efficient.
 - **Headers in rollover files**: Currently commented out; new files may not include column headers unless re-enabled.
 - **SD wear**: `flush()` on every write is safe but reduces SD card lifespan. Batch flushing is recommended.
 
 ---
 
-## 🚀 Future Improvements
+##  Future Improvements
 - Replace `delay()` with **millis()-based scheduling**.
 - Add **units** in CSV headers (°C, kPa).
 - Log **battery voltage** for diagnostics.
@@ -126,7 +126,7 @@ Time, Date, Fix, FixQuality, #sat, Longitude, Latitude, Altitude, Temperature, P
 
 ---
 
-## 🌍 Applications
+##  Applications
 - High-altitude balloon flights (atmospheric profiling)
 - Remote environmental monitoring
 - GPS-based tracking for research
